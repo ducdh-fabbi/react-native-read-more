@@ -1,6 +1,6 @@
 {
-  "name": "@fawazahmed/react-native-read-more",
-  "version": "1.0.8",
+  "name": "@ducdh-origin/react-native-read-more",
+  "version": "0.0.1",
   "description": "A simple react native library to show large blocks of text in a condensed manner with the ability to collapse and expand.",
   "main": "index.js",
   "scripts": {
@@ -33,5 +33,8 @@
   "homepage": "https://github.com/fawaz-ahmed/react-native-read-more#readme",
   "dependencies": {
     "prop-types": "^15.7.2"
+  },
+  "directories": {
+    "example": "example"
   }
 }

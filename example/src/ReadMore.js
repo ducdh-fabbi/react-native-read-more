@@ -126,11 +126,6 @@ const ReadMore = memo(
             </TouchableOpacity>
           </View>
         )}
-        {seeMore && !collapsed && (
-          <TouchableOpacity onPress={toggle} style={styles.seeLessContainer}>
-            <Text style={seeLessStyle}>{seeLessText}</Text>
-          </TouchableOpacity>
-        )}
       </View>
     );
   },
