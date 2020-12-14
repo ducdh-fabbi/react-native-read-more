@@ -35,6 +35,8 @@ const ReadMore = memo(
     seeLessText,
     animate,
     backgroundColor,
+    collapsedProps,
+    collapsedPropsAction,
     customTextComponent: TextComponent,
     ...restProps
   }) => {
@@ -68,6 +70,7 @@ const ReadMore = memo(
 
     const toggle = useCallback(() => {
       setCollapsed((prev) => !prev);
+      collapsedPropsAction((prev) => !prev);
       if (animate) {
         LayoutAnimation.configureNext(
           LayoutAnimation.create(
@@ -90,6 +93,10 @@ const ReadMore = memo(
     useEffect(() => {
       setAfterCollapsed(collapsed);
     }, [collapsed]);
+
+    useEffect(() => {
+      setCollapsed(collapsedProps);
+    }, [collapsedProps]);
 
     const textProps = collapsed
       ? {
