@@ -102,7 +102,7 @@ const ReadMore = memo(
       ? {
           onLayout: onTextLayout,
           numberOfLines,
-          ellipsizeMode: 'tail',
+          ellipsizeMode: 'clip',
         }
       : {};
 
