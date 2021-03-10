@@ -184,11 +184,9 @@ ReadMore.propTypes = {
   animate: PropTypes.bool,
   backgroundColor: PropTypes.string,
   customTextComponent: PropTypes.oneOfType([
-    Component,
-    PureComponent,
-    memo,
-    PropTypes.func,
-    Text,
+    PropTypes.node,
+    PropTypes.element,
+    PropTypes.elementType,
   ]),
 };
 
