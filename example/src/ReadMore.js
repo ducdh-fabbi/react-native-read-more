@@ -126,10 +126,10 @@ const ReadMore = memo(
             <TouchableOpacity
               onPress={toggle}
               style={[styles.seeMoreButton, {backgroundColor}]}>
-              <TextComponent {...restProps} style={style}>
-                {'... '}
-              </TextComponent>
-              <Text style={seeMoreStyle}>{seeMoreText}</Text>
+              {/*<TextComponent {...restProps} style={style}>*/}
+              {/*  {'... '}*/}
+              {/*</TextComponent>*/}
+              <Text style={seeMoreStyle}>...{seeMoreText}</Text>
             </TouchableOpacity>
           </View>
         )}
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
   },
   seeMoreContainer: {
     position: 'absolute',
-    right: 0,
+    right: -1,
     bottom: 0,
     flexDirection: 'row',
   },
